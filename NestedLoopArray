@@ -1,0 +1,18 @@
+// Write your code below
+
+const bobsFollowers = ['Roger', 'Vitalik', 'Satoshi', 'Charlie'];
+const tinasFollowers = ['Tone','Satoshi', 'Charlie'];
+const mutualFollowers = [];
+
+//Create a nested loop that iterates through bobsFollowers as the array for the outer loop, and tinasFollowers as the array for the inner array. If the current element from the outer loop is the same as the current element from the inner loop, push that element into the mutualFollowers array
+for (let i = 0; i < bobsFollowers.length; i++){
+  for (let j = 0; j < tinasFollowers.length; j++){
+    if (bobsFollowers[i] === tinasFollowers[j] ){
+      mutualFollowers.push(bobsFollowers[i]);
+    }   
+  }
+}
+
+console.log(tinasFollowers);
+console.log(bobsFollowers);
+console.log(mutualFollowers);
