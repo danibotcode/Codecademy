@@ -1,0 +1,53 @@
+function getSleepHours(day) {
+  if (day === 'monday') {
+    return 8;
+  } else if (day === 'sunday') {
+    return 11;
+  } else if (day === 'saturday') {
+    return 7;
+  } else if (day === 'friday') {
+    return 5;
+  } else if (day === 'thursday') {
+    return 6;
+  } else if (day === 'wednesday') {
+    return 5;
+  } else if (day === 'tuesday') {
+    return 7;
+  } 
+  
+};
+
+function getActualSleepHours(){
+ let su = getSleepHours('sunday');
+  let mo = getSleepHours('monday');
+  let tu = getSleepHours('tuesday');
+  let we = getSleepHours('wednesday');
+  let th = getSleepHours('thursday');
+  let fr = getSleepHours('friday');
+  let sa = getSleepHours('saturday');
+  return su+mo+tu+we+th+fr+sa;
+}
+
+function getIdealSleepHours(){
+  let idealHours = 8;
+  return idealHours *7;
+}
+
+function calculateSleepDebt(){
+  idealSleepHours = getIdealSleepHours();
+  actualSleepHours = getActualSleepHours();
+  
+  let cal = idealSleepHours - actualSleepHours;
+  
+  if (actualSleepHours === idealSleepHours){
+    console.log('You got the perfect amount of sleep.')
+  }
+  if (actualSleepHours > idealSleepHours){
+    console.log('You got '+ (cal)+' hour(s) more sleep than needed this week.')
+  }
+  if (actualSleepHours < idealSleepHours){
+    console.log('You got '+ (cal)+' hour(s) less sleep than needed this week. Get some rest.')
+  }
+}
+
+calculateSleepDebt();
