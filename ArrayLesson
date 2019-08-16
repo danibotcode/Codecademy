@@ -5,7 +5,7 @@ const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
 //array
 condiments[0] = 'Mayo';
 console.log(condiments);
-
+//array
 condiments = ['Mayo'];
 utensils[3] = 'Spoon';
 console.log(utensils);
