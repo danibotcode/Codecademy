@@ -1,6 +1,6 @@
 var userName = "";
 
-
+//
 userName ? console.log('Hello!') :
 console.log(userName);
 
