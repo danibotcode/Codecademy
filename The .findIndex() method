@@ -1,0 +1,13 @@
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+//Invoke .findIndex() on the animals array to find the index of the element that has the value 'elephant' and save the returned value to a const variable named foundAnimal
+
+const foundAnimal = animals.findIndex(animal => {
+    return animal == 'elephant';
+
+});
+
+const startsWithS = animals.findIndex(animal => {
+    return animal.charAt(0) == 's';
+
+});
