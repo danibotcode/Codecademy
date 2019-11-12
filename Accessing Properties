@@ -11,3 +11,5 @@ let spaceship = {
 let crewCount = spaceship.numCrew;
 
 let planetArray = spaceship.flightPath;
+
+// 42
