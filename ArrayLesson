@@ -1,5 +1,5 @@
 let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
-
+//JS
 const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
 
 //array
